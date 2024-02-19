@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #a4bdb7;
+}
+
+.box {
+    width: 350px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background: #ededed;
+}
+
+.box1 {
+    margin-top: 10px;
+}
+
+.content {
+    margin: 15px 2px;
+}
+
+.image img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.level {
+    font-size: 10px;
+    background-color: rgb(164, 189, 183, 0.5);
+    width: 50px;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0px auto 10px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bolder;
+    color: gray;
+    margin-top: -2px;
+}
+
+.discription {
+    font-size: 13px;
+    color: gray;
+    margin: 10px 30px 20px;
+}
+
+.icons {
+    margin: 0px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons a {
+    border: none;
+    font-size: 24px;
+    color: #000;
+}
+.icons a i {
+    transition: 0.5s ease;
+}
+.icons a:hover i {
+    transition: 0.5s ease;
+}
+
+.icons a:nth-child(1):hover i {
+    color: #ED7FDF;
+}
+.icons a:nth-child(2):hover i {
+    color: #e1306c;
+}
+.icons a:nth-child(3):hover i {
+    color: #1da1f2;;
+}
+.icons a:nth-child(4):hover i {
+    color: #0a66c2;
+}
+.icons a:nth-child(5):hover i {
+    color: #4267b2;
+}
+.icons a:nth-child(6):hover i {
+    color: #3f72f2;
+}
+
+
+
+button {
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px 30px 0px;
+}
+
+.buttons .message {
+    background: #ededed;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.buttons .connect {
+    background-color: #000;
+    color: #ededed;
+    border: none;
+    transition: 0.5s;
+}
+
+button.connect:hover,
+button.message:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+button.message:hover {
+    background: rgba(88, 164, 151, 0.5);
+}
