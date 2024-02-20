@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
+:root {
+    --dribbble: #ed7fdf;
+    --instagram: #e1306c;
+    --telegram: #1da1f2;
+    --linkedin: #0a66c2;
+    --facebook: #4267b2;
+    --behance: #3f72f2;
+
+    --bg-green: #a4bdb7;
+    --bg-white: #ededed;
+
+    --cl-gray: gray;
+    --cl-black: #000;
+}
+
+/* 
+cách đặt tên biến: --ten-bien: gia-tri;
+ví dụ : 
+    --primary-color: #3498db;
+    --font-size: 16px;
+cách sử dụng:  
+    selector {
+        backgrond-color: var(--ten-bien);
+    }
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #a4bdb7;
+    background: var(--bg-green);
 }
 
 .box {
@@ -20,11 +46,7 @@ body {
     border-radius: 20px;
     padding: 10px;
     text-align: center;
-    background: #ededed;
-}
-
-.box1 {
-    margin-top: 10px;
+    background: var(--bg-white);
 }
 
 .content {
@@ -44,7 +66,7 @@ body {
 
 .level {
     font-size: 10px;
-    background-color: rgb(164, 189, 183, 0.5);
+    background-color: var(--bg-green);
     width: 50px;
     padding: 3px;
     border-radius: 5px;
@@ -61,15 +83,15 @@ body {
 }
 
 .title {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bolder;
-    color: gray;
+    color: var(--cl-gray);
     margin-top: -2px;
 }
 
 .discription {
-    font-size: 13px;
-    color: gray;
+    font-size: 12px;
+    color: var(--cl-gray);
     margin: 10px 30px 20px;
 }
 
@@ -82,7 +104,7 @@ body {
 .icons a {
     border: none;
     font-size: 24px;
-    color: #000;
+    color: var(--cl-black);
 }
 .icons a i {
     transition: 0.5s ease;
@@ -92,25 +114,23 @@ body {
 }
 
 .icons a:nth-child(1):hover i {
-    color: #ED7FDF;
+    color: var(--dribbble);
 }
 .icons a:nth-child(2):hover i {
-    color: #e1306c;
+    color: var(--instagram);
 }
 .icons a:nth-child(3):hover i {
-    color: #1da1f2;;
+    color: var(--telegram);
 }
 .icons a:nth-child(4):hover i {
-    color: #0a66c2;
+    color: var(--linkedin);
 }
 .icons a:nth-child(5):hover i {
-    color: #4267b2;
+    color: var(--facebook);
 }
 .icons a:nth-child(6):hover i {
-    color: #3f72f2;
+    color: var(--behance);
 }
-
-
 
 button {
     width: 130px;
@@ -129,12 +149,12 @@ button {
 
 .buttons .message {
     background: #ededed;
-    border: 2px solid #000;
+    border: 2px solid var(--cl-black);
     transition: 0.5s;
 }
 
 .buttons .connect {
-    background-color: #000;
+    background-color: var(--cl-black);
     color: #ededed;
     border: none;
     transition: 0.5s;
@@ -147,5 +167,5 @@ button.message:hover {
 }
 
 button.message:hover {
-    background: rgba(88, 164, 151, 0.5);
+    background: var(--bg-green);
 }
